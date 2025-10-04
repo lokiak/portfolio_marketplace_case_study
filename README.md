@@ -128,7 +128,6 @@ portfolio_marketplace_case_study/
 ### Prerequisites
 ```bash
 python 3.9+
-pip install pandas numpy matplotlib seaborn jupyter
 ```
 
 ### Setup
@@ -137,14 +136,26 @@ pip install pandas numpy matplotlib seaborn jupyter
 git clone https://github.com/lokiak/portfolio_marketplace_case_study.git
 cd portfolio_marketplace_case_study
 
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 # Install dependencies
+pip install --upgrade pip
 pip install -r requirements.txt
 
 # Generate synthetic data (optional - data already included)
 python generate_synthetic_data.py
 
-# Launch Jupyter
+# Launch Jupyter Notebook
 jupyter notebook
+```
+
+**Quick Start (venv already included)**:
+```bash
+cd portfolio_marketplace_case_study
+source venv/bin/activate  # Activate the included virtual environment
+jupyter notebook          # Start analyzing!
 ```
 
 ### Running the Analysis
